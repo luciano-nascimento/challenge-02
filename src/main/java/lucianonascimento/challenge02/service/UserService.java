@@ -1,5 +1,6 @@
 package lucianonascimento.challenge02.service;
 
+import lucianonascimento.challenge02.apiClient.TransferAuthorizationClient;
 import lucianonascimento.challenge02.model.UserTypeEnum;
 import lucianonascimento.challenge02.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,9 +1,9 @@
-package lucianonascimento.challenge02.dto;
+package lucianonascimento.challenge02.controller.dto;
 
 import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
-public record TransferRequestDto(
+public record TransferRequest(
         @NotNull
         BigDecimal value,
         @NotNull
