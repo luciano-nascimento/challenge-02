@@ -9,16 +9,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("transfer")
 public class TransferController {
 
-    @Autowired
-    private TransferService transferService;
+  @Autowired
+  private TransferService transferService;
 
-    @PostMapping
-    public String transfer(@RequestBody TransferRequest transferRequest) {
-         var transferResult = transferService.transfer(transferRequest);
-
-        if (transferResult) {
-            return "Transfer succeed.";
-        }
-        return "Transfer Failed.";
-    }
+  @PostMapping
+  public String transfer(@RequestBody TransferRequest transferRequest) {
+    this.transferService.transfer(transferRequest);
+    return "Transfer succeed.";
+  }
 }
